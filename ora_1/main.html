@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>W3.CSS Template</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://www.w3schools.com/w3css/4/w3.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://www.w3schools.com/lib/w3-theme-black.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+                <a
+                    class="header__item w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1"
+                    href="javascript:void(0)"
+                    onclick="w3_open()"
+                    ><i class="fa fa-bars"></i
+                ></a>
+                <a
+                    href="/"
+                    class="header__item w3-bar-item w3-button w3-theme-l1"
+                >
+                    <div class="logo__container">
+                        <img
+                            src="./assets/logo.png"
+                            alt="HUST"
+                            class="logo__image"
+                        />
+                    </div>
+                </a>
+                <a
+                    href="/course.html"
+                    class="header__item w3-bar-item w3-button w3-hide-small w3-hover-white"
+                    >Thông tin môn học</a
+                >
+                <a
+                    href="/web_tech.html"
+                    class="header__item w3-bar-item w3-button w3-hide-small w3-hover-white"
+                    >Các công nghệ Web</a
+                >
+                <a
+                    href="/profile.html"
+                    class="header__item w3-bar-item w3-button w3-hide-small w3-hover-white"
+                    >Thông tin sinh viên</a
+                >
+                <!-- <a
+                    href="/about.html"
+                    class="header__item w3-bar-item w3-button w3-hide-small w3-hover-white"
+                    >Về chúng tôi</a
+                > -->
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <nav
+            class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left"
+            id="mySidebar"
+        >
+            <!-- <a class="w3-bar-item w3-button w3-hover-black" href="#"
+                >Thông tin chung</a
+            >
+            <a class="w3-bar-item w3-button w3-hover-black" href="#"
+                >Kế hoạch</a
+            >
+            <a class="w3-bar-item w3-button w3-hover-black" href="#">Tin tức</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="#"
+                >Thông báo</a
+            > -->
+        </nav>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div
+            class="w3-overlay w3-hide-large"
+            onclick="w3_close()"
+            style="cursor: pointer"
+            title="close side menu"
+            id="myOverlay"
+        ></div>
+
+        <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+        <div class="w3-main" style="margin-left: 250px">
+            <div id="main__content" class="w3-row w3-padding-64"></div>
+
+            <footer id="myFooter">
+                <div class="w3-container w3-theme-l2 w3-padding-32">
+                    <h3>Thông tin liên hệ</h3>
+                    <div class="footer__item">
+                        <div class="w3-padding-small">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="w3-padding-small">
+                            <span>(+84) 975749110</span>
+                        </div>
+                    </div>
+
+                    <div class="footer__item">
+                        <div class="w3-padding-small">
+                            <i class="fa-solid fa-message"></i>
+                        </div>
+                        <div class="w3-padding-small">
+                            <span>contact@daotao.ai</span>
+                        </div>
+                    </div>
+
+                    <div class="footer__item">
+                        <div class="w3-padding-small">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="w3-padding-small">
+                            <span
+                                >EdTech Centre, tầng 9 nhà B1 - Đại học Bách
+                                khoa Hà Nội Số 1 Đại Cồ Việt - Hai Bà Trưng - Hà
+                                Nội</span
+                            >
+                        </div>
+                    </div>
+
+                    <div class="footer__item">
+                        <div class="w3-padding-small">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="w3-padding-small">
+                            <a
+                                href="https://www.facebook.com/edtechcentredaotaoai"
+                                ><span> fb.com/edtechcentredaotaoai</span></a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="footer__item">
+                        <div class="w3-padding-small">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <div class="w3-padding-small">
+                            <a href="https://www.youtube.com/@daotaoai3701"
+                                ><span> youtube.com/@daotaoai3701</span></a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-theme-l1">
+                    <p>
+                        Hệ thống được Đinh Văn Luận xây dựng và vận hành
+                        <!-- <a
+                            href="https://www.w3schools.com/w3css/default.asp"
+                            target="_blank"
+                            >w3.css</a
+                        > -->
+                    </p>
+                </div>
+            </footer>
+
+            <!-- END MAIN -->
+        </div>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
