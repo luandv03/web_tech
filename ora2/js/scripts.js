@@ -1,6 +1,6 @@
 var headerList = [
     {
-        name: `<i class="fas fa-home"></i>`,
+        name: `Trang chủ`,
         leftMenuHeader: "Menu",
         leftMenuList: [
             {
@@ -150,18 +150,18 @@ var studentDefaultInfor = [
       <div class="header">Thông tin cá nhân</div>
       <div class="student-info" style="height: 50%">
               <div class="left">
-                  <img src="./assets/ava.jpg" alt="Student Photo" class="profile-photo" >
+                  <img src="./assets/avatar.jpg" alt="Student Photo" class="profile-photo" >
               </div>
         <div class="right">
-          <div class="details"><span>Họ và tên:</span> Nguyễn Xuân Tùng</div>
+          <div class="details"><span>Họ và tên:</span>Đinh Văn Luận</div>
           <div class="details"><span>Năm vào trường:</span> 2021</div>
           <div class="details"><span>Bậc đào tạo:</span> KSCLC-TN-TT-VNVP-ICT</div>
           <div class="details"><span>Chương trình:</span> Công nghệ thông tin Việt-Nhật 2021</div>
-          <div class="details"><span>MSSV:</span> 20215162</div>
+          <div class="details"><span>MSSV:</span> 20215083</div>
           <div class="details"><span>Giới tính:</span> Nam</div>
           <div class="details"><span>Lớp:</span> Việt-Nhật 02-K66</div>
           <div class="details"><span>Khóa học:</span> 66</div>
-          <div class="details"><span>Email:</span> Tung.NX215162@sis.hust.edu.vn</div>
+          <div class="details"><span>Email:</span> Luan.DV215083@sis.hust.edu.vn</div>
         </div>
       </div>
       `,
@@ -522,6 +522,7 @@ function handleClickEdit(headerIndex, ItemIndex) {
         const saveButtonCell = document.createElement("td");
         saveButtonCell.classList.add("save-button");
         saveButtonCell.innerHTML = `<button onClick="handleSaveEdit(${headerIndex}, ${ItemIndex})">Save</button>`;
+
         row.appendChild(saveButtonCell);
         editing = true;
     }
