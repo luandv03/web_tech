@@ -1,0 +1,256 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0px auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #e17c00;
+}
+
+.student-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.student-info .left {
+    width: 48%;
+}
+
+.student-info .right {
+    width: 80%;
+}
+
+.student-info img {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.details {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.details span {
+    font-weight: bold;
+}
+
+.academic-info,
+.skills-info,
+.hobbies-info,
+.projects-info {
+    margin-top: 20px;
+}
+
+.section-header {
+    background-color: #ffcc33;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.table-info {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+#admin-table > tr > td {
+    border: 0;
+}
+
+#admin-table > tr > th {
+    border: 0;
+    padding: 0;
+    background-color: white;
+    margin: 0;
+}
+
+#myFooter {
+    position: relative;
+    /* Can also try fixed if you want the footer to stay visible */
+    bottom: 0;
+    width: 100%;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+}
+
+.w3-main {
+    min-height: calc(100vh - 200px);
+    /* Adjust depending on the size of your footer */
+    /* padding-bottom: 100px; */
+    /* Space for the footer */
+}
+
+.w3-sidebar {
+    z-index: 3;
+    width: 250px;
+    top: 43px;
+    bottom: 0;
+    height: inherit;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    color: #fff !important;
+    background-color: #ffb300 !important;
+}
+
+.show-button {
+    color: #ccc;
+}
+
+.edit-button {
+    color: #ccc;
+}
+
+.delete-button {
+    color: #ccc;
+}
+
+.add-page-button {
+    color: #ccc;
+}
+
+.show-button:hover {
+    color: #ffb300;
+}
+
+.edit-button:hover {
+    color: #ffb300;
+}
+
+.delete-button:hover {
+    color: #ffb300;
+}
+
+.add-page-button:hover {
+    color: #ffb300;
+}
+
+.edit-input {
+    padding: 2px 4px;
+    font-weight: 600;
+    font-style: italic;
+    width: 100%;
+}
+
+.back-btn {
+    margin-right: 10px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    color: #ffb300;
+}
+
+.active-sidebar-item {
+    background-color: #ffb300;
+    color: white;
+}
+
+.cancel-button > button {
+    background-color: #333333;
+    border: 0;
+    color: white;
+    font-weight: 400;
+    padding: 3px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.save-button > button {
+    background-color: #ffb300;
+    border: 0;
+    color: white;
+    font-weight: 400;
+    padding: 3px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.save-button > button:hover {
+    background-color: #ffcc33;
+}
+
+.submit-button {
+    background-color: #ffb300;
+    border: 0;
+    color: white;
+    font-weight: 400;
+    padding: 3px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.submit-button:hover {
+    background-color: #ffcc33;
+}
+
+#submit-content {
+    margin-top: 10px;
+    background-color: #ffb300;
+    border: 0;
+    color: white;
+    font-weight: 400;
+    padding: 3px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.fa,
+.fa-solid {
+    cursor: pointer;
+}
