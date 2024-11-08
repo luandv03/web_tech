@@ -159,7 +159,7 @@ var studentDefaultInfor = [
           <div class="details"><span>Chương trình:</span> Công nghệ thông tin Việt-Nhật 2021</div>
           <div class="details"><span>MSSV:</span> 20215083</div>
           <div class="details"><span>Giới tính:</span> Nam</div>
-          <div class="details"><span>Lớp:</span> Việt-Nhật 02-K66</div>
+          <div class="details"><span>Lớp:</span> Việt-Nhật 01-K66</div>
           <div class="details"><span>Khóa học:</span> 66</div>
           <div class="details"><span>Email:</span> Luan.DV215083@sis.hust.edu.vn</div>
         </div>
@@ -398,6 +398,7 @@ function renderAdminContentLayout(HeaderIndex, ItemIndex) {
       <td class="add-page-button" onClick="handleClickAddSection(${HeaderIndex},${
                 ItemIndex - 1
             },${index})"><i class="fa fa-add"></i></td>
+          <td class="add-page-button"> <i class="fa-solid fa-circle-info back-btn" style="margin-left: 10px; margin-top: 1px" onClick="popUpHelper()"></i></td>
       `;
             adminTable.appendChild(row);
         });
