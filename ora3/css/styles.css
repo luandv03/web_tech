@@ -1,0 +1,359 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0px auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #e17c00;
+}
+
+.student-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.student-info .left {
+    width: 48%;
+}
+
+.student-info .right {
+    width: 80%;
+}
+
+.student-info img {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.details {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.details span {
+    font-weight: bold;
+}
+
+.academic-info,
+.skills-info,
+.hobbies-info,
+.projects-info {
+    margin-top: 20px;
+}
+
+.section-header {
+    background-color: #ffcc33;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.table-info {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+#admin-table > tr > td {
+    border: 0;
+}
+
+#admin-table > tr > th {
+    border: 0;
+    padding: 0;
+    background-color: white;
+    margin: 0;
+}
+
+#myFooter {
+    position: relative;
+    /* Can also try fixed if you want the footer to stay visible */
+    bottom: 0;
+    width: 100%;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+}
+
+.w3-main {
+    min-height: calc(100vh - 200px);
+    /* Adjust depending on the size of your footer */
+    /* padding-bottom: 100px; */
+    /* Space for the footer */
+}
+
+.w3-sidebar {
+    z-index: 3;
+    width: 250px;
+    top: 43px;
+    bottom: 0;
+    height: inherit;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    color: #fff !important;
+    background-color: #ffb300 !important;
+}
+
+.show-button {
+    color: #ccc;
+}
+
+.edit-button {
+    color: #ccc;
+}
+
+.delete-button {
+    color: #ccc;
+}
+
+.add-page-button {
+    color: #ccc;
+}
+
+.show-button:hover {
+    color: #ffb300;
+}
+
+.edit-button:hover {
+    color: #ffb300;
+}
+
+.delete-button:hover {
+    color: #ffb300;
+}
+
+.add-page-button:hover {
+    color: #ffb300;
+}
+
+.edit-input {
+    padding: 2px 4px;
+    font-weight: 600;
+    font-style: italic;
+    width: 100%;
+}
+
+.back-btn {
+    margin-right: 10px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    color: #ffb300;
+}
+
+.active-sidebar-item {
+    background-color: #ffb300;
+    color: white;
+}
+
+.cancel-button > button {
+    background-color: #333333;
+    border: 0;
+    color: white;
+    font-weight: 400;
+    padding: 3px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.save-button > button {
+    background-color: #ffb300;
+    border: 0;
+    color: white;
+    font-weight: 400;
+    padding: 3px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.save-button > button:hover {
+    background-color: #ffcc33;
+}
+
+.submit-button {
+    background-color: #ffb300;
+    border: 0;
+    color: white;
+    font-weight: 400;
+    padding: 3px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.submit-button:hover {
+    background-color: #ffcc33;
+}
+
+#submit-content {
+    margin-top: 10px;
+    background-color: #ffb300;
+    border: 0;
+    color: white;
+    font-weight: 400;
+    padding: 3px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.fa,
+.fa-solid {
+    cursor: pointer;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #2980b9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 30px;
+    aspect-ratio: 1;
+    display: grid;
+    -webkit-mask: conic-gradient(from 15deg, #0000, #000);
+    animation: l26 1s infinite steps(12);
+}
+.loader,
+.loader:before,
+.loader:after {
+    background: radial-gradient(closest-side at 50% 12.5%, #f03355 96%, #0000)
+            50% 0/20% 80% repeat-y,
+        radial-gradient(closest-side at 12.5% 50%, #f03355 96%, #0000) 0 50%/80%
+            20% repeat-x;
+}
+.loader:before,
+.loader:after {
+    content: "";
+    grid-area: 1/1;
+    transform: rotate(30deg);
+}
+.loader:after {
+    transform: rotate(60deg);
+}
+
+@keyframes l26 {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+span {
+    font-size: 18px;
+}
+
+.highlight {
+    color: red;
+}
+
+.wikipedia {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wikipedia__img {
+    width: 100px;
+}
